@@ -26,10 +26,10 @@ public:
 	__declspec(property(get = Get, put = Set))string Value;
 
 	/*
-	 Look : _UNDO => M1 M2 M3 M4  CurrentValue=M5
+	 Look : _UNDO-Stack => M1 M2 M3 M4  CurrentValue=M5
 
 	 After Undo :
-	 _REDO => M5   CurrentValue=M4  _UNDO => M1 M2 M3
+	 _REDO-Stack => M5   CurrentValue=M4  _UNDO-Stack => M1 M2 M3
 
 	 After Redo :
 		 _REDO => Empty   CurrentValue=M5  _UNDO => M1 M2 M3 M4
