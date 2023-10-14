@@ -1,2 +1,2 @@
 # DSA
-My DSA C++ Practi
+My DSA C++ Practice
